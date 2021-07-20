@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "file-trans-service",
+      "script": "./app.js",
+      "watch": true,
+      "log_date_format": "YYYY-MM-DD HH-mm-ss",
+      "error_file": "./logs/error.log",
+      "out_file": "./logs/out.log",
+      "ignoreWatch": [
+        "node_modules",
+        "logs"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
